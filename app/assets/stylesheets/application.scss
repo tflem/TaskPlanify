@@ -18,14 +18,11 @@
  @import "bulma";
 
  /* Mixins, Variables, Etc. */
-$twitter-blue:      #00ACED;
-$linkedin-blue:     #0077B5;
-$github-blue:       #4078C0;
-$angellist-black:   #000000;
-
-.fa-heart {
-  color: crimson;
- }
+$twitter-blue:         #00ACED;
+$linkedin-blue:        #0077B5;
+$github-blue:          #4078C0;
+$angellist-black:      #000000;
+$stackoverflow-orange: #F48024;
 
 .social-icons {
   list-style: none;
@@ -39,10 +36,19 @@ $angellist-black:   #000000;
   }
 }
 
+.fa-heart { color: crimson; }
+
+.fa-minus { 
+  padding: 0.2em;
+  padding-left: 0.4em;
+}
+
 .fa-twitter,
 .fa-linkedin,
-.fa-github {
-  padding: 0.5em;
+.fa-github,
+.fa-angellist,
+.fa-stack-overflow {
+  padding: 0.6em;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
@@ -51,3 +57,4 @@ $angellist-black:   #000000;
 .fa-linkedin:hover { color: $linkedin-blue; }
 .fa-github:hover { color: $github-blue; }
 .fa-angellist:hover { color: $angellist-black; }
+.fa-stack-overflow:hover { color: $stackoverflow-orange; }
