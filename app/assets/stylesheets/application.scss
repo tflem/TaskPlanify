@@ -40,7 +40,8 @@ $stackoverflow-orange: #F48024;
 
 .fa-minus { 
   padding: 0.2em;
-  padding-left: 0.4em;
+  padding-left: 0.2em;
+  padding-right: 0em;
 }
 
 .fa-twitter,
@@ -49,6 +50,8 @@ $stackoverflow-orange: #F48024;
 .fa-angellist,
 .fa-stack-overflow {
   padding: 0.6em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
