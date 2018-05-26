@@ -21,6 +21,7 @@
 $twitter-blue:      #00ACED;
 $linkedin-blue:     #0077B5;
 $github-blue:       #4078C0;
+$angellist-black:   #000000;
 
 .fa-heart {
   color: crimson;
@@ -49,3 +50,4 @@ $github-blue:       #4078C0;
 .fa-twitter:hover { color: $twitter-blue; }
 .fa-linkedin:hover { color: $linkedin-blue; }
 .fa-github:hover { color: $github-blue; }
+.fa-angellist:hover { color: $angellist-black; }
