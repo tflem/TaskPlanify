@@ -5,17 +5,17 @@
       <div class="container">
         <div class="navbar-brand">
           <%= link_to "Task Planify", root_path, class: "navbar-item" %>
-          <span class="navbar-burger burger" data-target="navbarMenuHeroC">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </div>
-        <div id="navbarMenuHeroC" class="navbar-menu">
-          <div class="navbar-end">
-            <a class="navbar-item is-active">
-              Home
-            </a>            
+          <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>                 
+              
+        <div id="navMenu" class="navbar-menu">
+          <div class="navbar-end">                                  
+              <%= link_to "Home", root_path, class: "navbar-item is-active" %>          
+                             
             <span class="navbar-item">                
               <%= link_to "Login", class: "button is-dark is-inverted" do %>
                 <span class="icon">
