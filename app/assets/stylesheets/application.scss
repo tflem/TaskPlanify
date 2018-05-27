@@ -24,18 +24,6 @@ $github-blue:          #4078C0;
 $angellist-black:      #000000;
 $stackoverflow-orange: #F48024;
 
-.social-icons {
-  list-style: none;
-  float: none;    
-  li {
-    display: inline-block;
-    margin-right: 1.0em;
-  }
-  &:last-child {
-  margin-right: 0em;
-  }
-}
-
 .fa-heart { color: crimson; }
 
 .fa-minus { 
@@ -53,7 +41,7 @@ $stackoverflow-orange: #F48024;
   padding-left: 0.3em;
   padding-right: 0.3em;
   -webkit-transition: color 0.3s;
-  transition: color 0.3s;
+  transition: color 0.3s;  
 }
 
 .fa-twitter:hover { color: $twitter-blue; }
