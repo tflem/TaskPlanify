@@ -1,3 +1,6 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/70ad0217d63f10aac886/maintainability)](https://codeclimate.com/github/ryandav/ruby_types/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/70ad0217d63f10aac886/test_coverage)](https://codeclimate.com/github/ryandav/ruby_types/test_coverage)
+
 # Task Planify
 
 > A simple task planning application, which features or will feature the following:
