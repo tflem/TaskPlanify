@@ -3,8 +3,18 @@ language: ruby
 rvm:
  - 2.5.1
 
- env:
-  - DB=postgresql
+services:
+  - postgresql
+
+addons:
+  postgresql: "10"
+  apt:
+    packages:
+    - postgresql-10
+    - postgresql-client-10
+env:
+  global:
+  - PGPORT=5433
  
 before_install: gem install bundler -v 1.16.1
 
@@ -13,7 +23,7 @@ script:
   - bundle exec minitest test/
 
 before_script:  
-  - cp config/database.travis.yml config/database.yml
-  - psql -c 'create database TaskPlanify_test;' -U postgres
+  - psql -c 'create database travis_ci_test;' -U postgres
+  - cp config/database.travis.yml config/database.yml  
 
 bundler_args: --binstubs=./bundler_stubs
