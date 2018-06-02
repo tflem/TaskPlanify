@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/tflem/TaskPlanify.svg?branch=master)](https://travis-ci.org/tflem/TaskPlanify)
 [![Maintainability](https://api.codeclimate.com/v1/badges/70ad0217d63f10aac886/maintainability)](https://codeclimate.com/github/tflem/TaskPlanify/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/70ad0217d63f10aac886/test_coverage)](https://codeclimate.com/github/tflem/TaskPlanify/test_coverage)
 
