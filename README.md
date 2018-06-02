@@ -1,14 +1,14 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/70ad0217d63f10aac886/maintainability)](https://codeclimate.com/github/ryandav/ruby_types/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/70ad0217d63f10aac886/test_coverage)](https://codeclimate.com/github/ryandav/ruby_types/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/70ad0217d63f10aac886/maintainability)](https://codeclimate.com/github/tflem/TaskPlanify/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/70ad0217d63f10aac886/test_coverage)](https://codeclimate.com/github/tflem/TaskPlanify/test_coverage)
 
 # Task Planify
 
-> A simple task planning application, which features or will feature the following:
+> A task planning application, which features or will feature the following:
 
 * Ruby on Rails 5
-* HTML
-* SASS
+* HTML and Sass
 * PostgreSQL 
+* Testing Framework: Minitest
 * Bulma: CSS Framework Based on Flexbox
 
 ## Setup
