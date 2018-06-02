@@ -15,11 +15,11 @@ services:
   - postgresql
 
 addons:
+  postgresql: "10.4"
   apt:
     packages:
       - postgresql-10
       - postgresql-client-10
-  postgresql: 10.4
 env:
   global:
     - PGPORT=5433
@@ -30,6 +30,7 @@ notifications:
   - false
 
 before_script:  
+  - psql -c 'create database travis_ci_test;' -U postgres
   - cp config/database.yml.travis config/database.yml     
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
