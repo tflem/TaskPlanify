@@ -12,6 +12,9 @@ rvm:
 services:
   - postgresql
 
+addons:
+  postgresql: "10.4"
+
 notifications:
   - false
 
