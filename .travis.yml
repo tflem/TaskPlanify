@@ -9,9 +9,6 @@ rvm:
 
 services:
   - postgresql
-
-addons:
-  postgresql: "10"  
  
 before_install: gem install bundler -v 1.16.1
 
