@@ -4,6 +4,9 @@ env:
 
 language: ruby
 
+dist:
+  - Trusty
+
 cache: bundler
 
 rvm:
@@ -13,7 +16,7 @@ services:
   - postgresql
 
 addons:
-  postgresql: "9.6"  
+  postgresql: "10.4"  
 
 notifications:
   - false
