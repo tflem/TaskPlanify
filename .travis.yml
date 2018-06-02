@@ -13,7 +13,7 @@ services:
   - postgresql
 
 addons:
-  postgresql: "10.4"  
+  postgresql: "9.6"  
 
 notifications:
   - false
