@@ -1,0 +1,15 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode  
+
+development:
+  <<: *default
+  database: TaskPlanify_development
+  
+test:
+  <<: *default
+  database: TaskPlanify_test
+
+production:
+  <<: *default
+  database: TaskPlanify_production
