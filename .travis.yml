@@ -6,4 +6,4 @@ rvm:
 before_install: gem install bundler -v 1.16.1
 before_script:  
   - cp config/database.yml.travis config/database.yml
-  - psql -c 'create database TaskPlanify_test;' -U postgres
+  - psql -c 'create database travis_ci_test;' -U postgres
