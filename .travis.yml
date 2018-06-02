@@ -8,7 +8,8 @@ env:
   global:
     - CC_TEST_REPORTER_ID=f7efd3a2042631e5810ec00089e8b1ef1a148f2a3546ea9f6aa653291d9dab27
 
-language: ruby
+language: 
+  - ruby
 
 rvm:
  - 2.5.1
@@ -17,14 +18,7 @@ services:
   - postgresql
 
 addons:
-  postgresql: "10.4"
-  apt:
-    packages:
-      - postgresql-10
-      - postgresql-client-10
-env:
-  global:
-    - PGPORT=5433
+  postgresql: "9.6"
  
 before_install: gem install bundler -v 1.16.1
 
@@ -32,7 +26,7 @@ notifications:
   - false
 
 before_script:  
-  - psql -c "ALTER USER travis WITH PASSWORD 'travis';"
+  - psql -c 'create database TaskPlanify_test;' -U postgres
   - cp config/database.yml.travis config/database.yml     
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
