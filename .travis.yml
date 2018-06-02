@@ -10,8 +10,8 @@ addons:
   postgresql: "10.4"
   apt:
     packages:
-    - postgresql-10.4
-    - postgresql-client-10.4
+    - postgresql-10
+    - postgresql-client-10
 env:
   global:
   - PGPORT=5433
