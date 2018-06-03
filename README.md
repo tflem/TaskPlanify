@@ -4,8 +4,10 @@
 
 # Task Planify
 
-> A task planning application, which features or will feature the following:
+> A task planning application, which features the following tools:
 
+* Ruby 2.5.1 -- It's Getting Faster!
+* Continuous Integration: Travis
 * Ruby on Rails 5
 * HTML and Sass
 * PostgreSQL 
