@@ -42,6 +42,4 @@ How to prepare (create and migrate) DB for `development` and `test` environments
 % rails db:migrate
 ```
 
-```
-You can view my progress at https://taskplanify.herokuapp.com.
-```
+You can view my progress at http://taskplanify.herokuapp.com.
