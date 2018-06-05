@@ -24,6 +24,14 @@ $github-blue:          #4078C0;
 $angellist-black:      #000000;
 $stackoverflow-orange: #F48024;
 
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
+/* footer items */
+
 .fa-heart { color: crimson; }
 
 .fa-minus { 
@@ -49,3 +57,13 @@ $stackoverflow-orange: #F48024;
 .fa-github:hover { color: $github-blue; }
 .fa-angellist:hover { color: $angellist-black; }
 .fa-stack-overflow:hover { color: $stackoverflow-orange; }
+
+/* miscellaneous */
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
