@@ -3,6 +3,8 @@
 
 <div class="field is-grouped is-grouped-centered">
   <%= form_for(@user) do |f| %>
+    <%= render "shared/error_messages" %>
+    
     <div class="field">
       <%= f.label :name %>  
     </div>  
