@@ -1,0 +1,32 @@
+<section class="hero is-dark is-small">
+  <!-- Hero head: will stick at the top -->
+  <div class="hero-head">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <%= link_to "Task Planify", root_path, class: "navbar-item" %>
+          <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>    
+        <div id="navbarMenuHeroA" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item is-active">
+              Sign Up
+            </a>            
+            <span class="navbar-item">                
+              <%= link_to "Login", class: "button is-dark is-inverted" do %>
+                <span class="icon">
+                  <i class="fas fa-sign-in-alt" aria-hidden="true"></i>
+                </span>
+                <span>Login</span>
+              <% end %>                                                                                      
+            </span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>  
+</section>
