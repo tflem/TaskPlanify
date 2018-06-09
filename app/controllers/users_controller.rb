@@ -6,6 +6,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[user_params])
     if @user.save
+      redirect_to @user
       # render successful flash message
     else
       render 'new'
