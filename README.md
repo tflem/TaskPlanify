@@ -8,11 +8,11 @@
 
 * Ruby 2.5.1 -- It's Getting Faster!
 * Continuous Integration: Travis
-* Ruby on Rails 5
+* Ruby on Rails 5.1.6
 * HTML and Sass
-* PostgreSQL 
-* Testing Framework: Minitest
-* Bulma: CSS Framework Based on Flexbox
+* PostgreSQL 10
+* Testing Framework: Minitest 5.11.3
+* Bulma: CSS Framework Based on Flexbox 0.7.1
 
 ## Setup
 
