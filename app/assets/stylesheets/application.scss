@@ -18,11 +18,11 @@
  @import "bulma";
 
  /* Mixins, Variables, Etc. */
-$twitter-blue:         #00ACED;
-$linkedin-blue:        #0077B5;
-$github-blue:          #4078C0;
+$twitter-blue:         rgb(0, 172, 237);
+$linkedin-blue:        rgb(0, 119, 181);
+$github-blue:          rgb(64, 120, 192);
 $angellist-black:      #000000;
-$stackoverflow-orange: #F48024;
+$stackoverflow-orange: rgb(244, 128, 36);
 $danger-red:           hsl(348, 100%, 61%);
 
 @mixin box_sizing {
