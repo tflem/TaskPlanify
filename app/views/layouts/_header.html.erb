@@ -12,10 +12,16 @@
           </a>
         </div>    
         <div id="navbarMenuHeroA" class="navbar-menu">
-          <div class="navbar-end">
-            <a class="navbar-item is-active">
-              Sign Up
-            </a>            
+          <div class="navbar-end"> 
+            <span class="navbar-item">
+              <%= link_to "Home", class: "button is-dark is-inverted" do %>    
+                <span class="icon">
+                  <i class="fas fa-home" aria-hidden="true"></i>
+                </span>    
+                <span>Home</span>      
+              <% end %>     
+            </span>    
+            
             <span class="navbar-item">                
               <%= link_to "Login", class: "button is-dark is-inverted" do %>
                 <span class="icon">
