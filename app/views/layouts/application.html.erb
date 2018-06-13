@@ -15,9 +15,15 @@
     </body>
   <% else %>
     <body>
-      <%= render "layouts/header" %>        
-      <% flash.each do |message_type, message| %>
-          <div class="notification is-success"><%= message %></div>
+      <%= render "layouts/header" %>  
+      <% if flash[:success] %>      
+        <% flash.each do |message_type, message| %>
+          <div class="notification is-success"><%= message %></div>   
+        <% end %>         
+      <% else flash[:danger] %>
+        <% flash.each do |message_type, message| %>
+          <div class="notification is-danger"><%= message %></div>  
+        <% end %>    
       <% end %>
       <%= yield %>      
     <% end %>
