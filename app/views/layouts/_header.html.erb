@@ -1,38 +1,49 @@
-<section class="hero is-dark is-small">
-  <!-- Hero head: will stick at the top -->
-  <div class="hero-head">
-    <nav class="navbar">
-      <div class="container">
-        <div class="navbar-brand">
-          <%= link_to "Task Planify", root_path, class: "navbar-item" %>
-          <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>    
-        <div id="navbarMenuHeroA" class="navbar-menu">
-          <div class="navbar-end"> 
-            <span class="navbar-item">
-              <%= link_to "Home", class: "button is-dark is-inverted" do %>    
-                <span class="icon">
-                  <i class="fas fa-home" aria-hidden="true"></i>
-                </span>    
-                <span>Home</span>      
-              <% end %>     
-            </span>    
-            
-            <span class="navbar-item">                
-              <%= link_to "Login", class: "button is-dark is-inverted" do %>
-                <span class="icon">
-                  <i class="fas fa-sign-in-alt" aria-hidden="true"></i>
-                </span>
-                <span>Login</span>
-              <% end %>                                                                                      
-            </span>
+<nav class="navbar is-dark">
+  <div class="container">
+    <div class="navbar-brand">
+      <%= link_to "Task Planify", root_path, class: "navbar-item" %>
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+    </div>    
+    
+  <div id="navbarMenuHeroA" class="navbar-menu">
+    <div class="navbar-end"> 
+      <span class="navbar-item">
+        <%= link_to root_path, class: "button is-dark is-inverted" do %>    
+          <span class="icon">
+            <i class="fas fa-home" aria-hidden="true"></i>
+          </span>    
+          <span>Home</span>      
+        <% end %>     
+      </span>    
+
+    <% if logged_in? %>
+      <nav class="navbar is-dark" role="navigation" aria-label="dropdown navigation">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <%= link_to "Account", "#", class: "navbar-link" %>
+
+          <div class="navbar-dropdown is-boxed">
+          <%= link_to "Edit Registration", "#", class: "navbar-item" %>                    
+          <hr class="navbar-divider">
+          <%= link_to "Logout", "#", class: "navbar-item" %>                      
           </div>
         </div>
+      </nav>
+            
+    <% else %>            
+      <span class="navbar-item">                
+        <%= link_to login_path, class: "button is-dark is-inverted" do %>
+          <span class="icon">
+            <i class="fas fa-sign-in-alt" aria-hidden="true"></i>
+          </span>
+          <span>Login</span>
+        <% end %>                                                                                      
+          </span>
+        <% end %>
       </div>
-    </nav>
-  </div>  
-</section>
+    </div>
+  </div>
+</nav>
