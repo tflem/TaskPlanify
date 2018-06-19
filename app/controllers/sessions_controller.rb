@@ -5,9 +5,8 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by(email: params[:session][:email].downcase)
     if user && user.authenticate(params[:session][:password])      
-      log_in @user
-      flash[:success] = "Welcome to Task Planify."
-      redirect_to @user
+      log_in user      
+      redirect_to user
     else
       flash.now[:danger] = "Invalid Email/Password Combination."
       render "new"
