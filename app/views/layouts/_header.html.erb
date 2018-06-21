@@ -23,12 +23,28 @@
     <% if logged_in? %>
       <nav class="navbar" role="navigation" aria-label="dropdown navigation">
         <div class="navbar-item has-dropdown is-hoverable is-transparent">
-          <%= link_to "Account", "#", class: "navbar-link" %>
+          <%= link_to "#", class: "navbar-link" do %>
+            <span class="icon">
+              <i class="fas fa-user" aria-hidden="true"></i>   
+            </span>               
+            <span>Account</span>
+          <% end %>
 
-          <div class="navbar-dropdown is-boxed">
-          <%= link_to "Edit Registration", "#", class: "navbar-item" %>                    
-          <hr class="navbar-divider">
-          <%= link_to "Logout", logout_path, class: "navbar-item" %>                      
+          <div class="navbar-dropdown is-boxed">          
+          <%= link_to "#", class: "navbar-item" do %>   
+            <span class="icon">
+              <i class="fas fa-edit" aria-hidden="true"></i>   
+            </span> 
+            <span>Edit Settings</span>
+          <% end %>            
+
+          <hr class="navbar-divider">        
+          <%= link_to logout_path, method: :delete, class: "navbar-item" do %>    
+            <span class="icon">
+              <i class="fas fa-trash" aria-hidden="true"></i>   
+            </span>               
+            <span>Logout</span>
+          <% end %>
           </div>
         </div>
       </nav>
